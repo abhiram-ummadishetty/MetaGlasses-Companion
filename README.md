@@ -37,12 +37,7 @@ cd <repo-folder>
 
 ### 2. Install Dependencies
 
-With Bun (recommended):
-```bash
-bun install
-```
-
-Or with npm:
+with npm:
 ```bash
 npm install
 ```
@@ -50,8 +45,6 @@ npm install
 ### 3. Start Development Server
 
 ```bash
-bun dev
-# or
 npm run dev
 ```
 
@@ -60,15 +53,12 @@ The app will be available at **`http://localhost:3000`**.
 ### 4. Build for Production
 
 ```bash
-bun run build
 # or
 npm run build
 ```
 
 Preview the production build:
 ```bash
-bun preview
-# or
 npm run preview
 ```
 
@@ -84,8 +74,6 @@ Since the app uses ONNX Runtime Web with WebAssembly, **HTTPS is strongly recomm
    - **Windows:** `ipconfig` → look for `IPv4 Address`
 3. Start the dev server with the host flag to allow external connections:
    ```bash
-   bun dev --host
-   # or
    npx vite --host
    ```
 4. On your phone, open:
@@ -134,18 +122,6 @@ cloudflared tunnel --url http://localhost:3000
 ```
 
 Copy the generated `https://` URL to your phone.
-
-### Option D: Deploy and Access Anywhere
-
-You can publish this app via Lovable or deploy to Vercel/Netlify for a permanent public URL:
-
-```bash
-# Build first
-bun run build
-
-# Deploy to Vercel (if you have the CLI)
-npx vercel --prod
-```
 
 ## How It Works
 
